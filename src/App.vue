@@ -33,6 +33,13 @@
       >
       เข้าสู่ระบบ
       </v-btn>
+
+      <v-btn
+        text
+        @click="Gotomanage()"
+      >
+      หน้าจัดการข้อมูล
+      </v-btn>
     </v-app-bar>
 
     <v-main>
@@ -51,7 +58,10 @@ export default {
   }),
   methods: {
     Gotologin () {
-      this.$router.push('/login')
+      this.$router.push({ path: '/login'}).catch(() => {})
+    },
+    GotoManage() {
+      this.$router.push({ path: '/manageTable'}).catch(() => {})
     }
   }
 }
