@@ -60,8 +60,8 @@ export default {
     Gotologin () {
       this.$router.push({ path: '/login'}).catch(() => {})
     },
-    GotoManage() {
-      this.$router.push({ path: '/manageTable'}).catch(() => {})
+    Gotomanage() {
+      this.$router.push({ path: '/manage'}).catch(() => {})
     }
   }
 }
