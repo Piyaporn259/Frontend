@@ -30,9 +30,18 @@
       <v-btn
        text
        @click="goToLogin()"
+
       >
         <span class="mr-2">Login</span>
         <v-icon>mdi-open-in-new</v-icon>
+      </v-btn>
+
+      <v-btn
+        text
+        @click="Gotomanage()"
+      >
+      หน้าจัดการข้อมูล
+
       </v-btn>
     </v-app-bar>
 
@@ -53,6 +62,7 @@ export default {
   methods: {
     goToLogin () {
       this.$router.push('/login')
+
     }
   }
 }
