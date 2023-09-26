@@ -28,10 +28,11 @@
       <v-spacer></v-spacer>
 
       <v-btn
-        text
-        @click="Gotologin()"
+       text
+       @click="goToLogin()"
       >
-      เข้าสู่ระบบ
+        <span class="mr-2">Login</span>
+        <v-icon>mdi-open-in-new</v-icon>
       </v-btn>
 
       <v-btn
@@ -57,11 +58,9 @@ export default {
     //
   }),
   methods: {
-    Gotologin () {
-      this.$router.push({ path: '/login'}).catch(() => {})
-    },
-    Gotomanage() {
-      this.$router.push({ path: '/manage'}).catch(() => {})
+    goToLogin () {
+      this.$router.push('/login')
+>>>>>>> lab9
     }
   }
 }
