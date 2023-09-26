@@ -40,6 +40,8 @@
         @click="Gotomanage()"
       >
       หน้าจัดการข้อมูล
+
+
       </v-btn>
     </v-app-bar>
 
@@ -60,7 +62,6 @@ export default {
   methods: {
     goToLogin () {
       this.$router.push('/login')
->>>>>>> lab9
     }
   }
 }
