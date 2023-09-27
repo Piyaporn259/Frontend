@@ -37,9 +37,17 @@
 
       <v-btn
         text
-        @click="Gotomanage()"
+        @click="goToManage()"
       >
       หน้าจัดการข้อมูล
+
+
+      </v-btn>
+      <v-btn
+        text
+        @click="goToConnect()"
+      >
+      Connect Backend
 
 
       </v-btn>
@@ -61,7 +69,13 @@ export default {
   }),
   methods: {
     goToLogin () {
-      this.$router.push('/login')
+      this.$router.push({ path:'/login'}).catch(()=>{})
+    },
+    goToManage () {
+      this.$router.push({ path:'/manageTable'}).catch(()=>{})
+    },
+    goToConnect () {
+      this.$router.push({ path:'/Connect'}).catch(()=>{})
     }
   }
 }
